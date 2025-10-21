@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <title>ТМК</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/components/header.css">
-    <link rel="stylesheet" href="src/css/components/products.css">
-    <link rel="stylesheet" href="src/css/components/modals.css">
-    <link rel="stylesheet" href="src/css/components/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="header">
         <div class="tmk-title">ТМК</div>
-        
+
         <div class="desktop-header-controls">
             <div class="desktop-search-container">
                 <div class="search-icon">🔍</div>
@@ -25,7 +21,7 @@
                 <span class="arrow">▼</span>
             </button>
         </div>
-        
+
         <button class="cart-button">
             <span class="cart-icon">🛒</span>
             <span class="cart-count">0</span>
@@ -135,12 +131,13 @@
         </aside>
 
         <div class="products-container">
-            <section class="products-grid">
-                <!-- Товары будут загружаться динамически -->
+            <section class="products-grid" id="products-grid">
+                <!-- Products will be loaded dynamically -->
             </section>
         </div>
     </main>
 
+    <!-- Modals -->
     <div class="cart-modal">
         <div class="cart-content">
             <div class="cart-header">
@@ -155,9 +152,7 @@
                 </label>
             </div>
 
-            <div class="cart-items">
-                <!-- Товары в корзине будут добавляться динамически -->
-            </div>
+            <div class="cart-items"></div>
 
             <hr class="cart-divider">
 
@@ -288,9 +283,7 @@
                 <div class="payment-title">Оплата</div>
             </div>
 
-            <div class="payment-products">
-                <!-- Выбранные товары будут добавляться динамически -->
-            </div>
+            <div class="payment-products"></div>
 
             <div class="payment-form">
                 <div class="form-group">
@@ -350,11 +343,11 @@
         </div>
     </div>
 
-    <!-- Подключение JavaScript файлов -->
-    <script src="src/js/modules/products.js"></script>
-    <script src="src/js/modules/cart.js"></script>
-    <script src="src/js/modules/filters.js"></script>
-    <script src="src/js/modules/modals.js"></script>
-    <script src="src/js/main.js"></script>
+    <!-- JavaScript Files -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/telegram.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
