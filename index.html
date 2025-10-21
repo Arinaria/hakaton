@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <title>ТМК</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/components/header.css">
-    <link rel="stylesheet" href="css/components/products.css">
-    <link rel="stylesheet" href="css/components/modals.css">
-    <link rel="stylesheet" href="css/components/responsive.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/components/header.css">
+    <link rel="stylesheet" href="src/css/components/products.css">
+    <link rel="stylesheet" href="src/css/components/modals.css">
+    <link rel="stylesheet" href="src/css/components/responsive.css">
 </head>
 <body>
     <div class="header">
@@ -346,10 +346,24 @@
         </div>
     </div>
 
-    <script src="js/modules/products.js"></script>
-    <script src="js/modules/cart.js"></script>
-    <script src="js/modules/filters.js"></script>
-    <script src="js/modules/modals.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Временный скрипт для отладки -->
+    <script>
+        // Временный скрипт для проверки загрузки
+        console.log('Script loaded');
+        
+        // Проверяем загрузку CSS
+        const stylesheets = document.styleSheets;
+        console.log('Loaded stylesheets:', stylesheets.length);
+        
+        for (let i = 0; i < stylesheets.length; i++) {
+            console.log('Stylesheet:', stylesheets[i].href);
+        }
+    </script>
+
+    <script src="src/js/modules/products.js"></script>
+    <script src="src/js/modules/cart.js"></script>
+    <script src="src/js/modules/filters.js"></script>
+    <script src="src/js/modules/modals.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
