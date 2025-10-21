@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Труба бесшовная холоднодеформированная",
+      "code": "271.1121110-01",
+      "price": 1500,
+      "type": "seamless",
+      "diameter": 159,
+      "thickness": 5,
+      "gost": "gost1",
+      "steel": "steel3",
+      "warehouse": "moscow",
+      "availability": 15.5
+    },
+    {
+      "id": 2,
+      "name": "Труба бесшовная горячедеформированная",
+      "code": "271.1121110-02",
+      "price": 2300,
+      "type": "seamless",
+      "diameter": 219,
+      "thickness": 8,
+      "gost": "gost2",
+      "steel": "steel2",
+      "warehouse": "spb",
+      "availability": 8.2
+    },
+    {
+      "id": 3,
+      "name": "Труба профильная квадратная",
+      "code": "271.1121110-03",
+      "price": 850,
+      "type": "profile",
+      "diameter": 80,
+      "thickness": 3,
+      "gost": "gost3",
+      "steel": "steel1",
+      "warehouse": "ekb",
+      "availability": 22.7
+    },
+    {
+      "id": 4,
+      "name": "Труба нержавеющая пищевая",
+      "code": "271.1121110-04",
+      "price": 4200,
+      "type": "stainless",
+      "diameter": 50,
+      "thickness": 2,
+      "gost": "gost4",
+      "steel": "steel4",
+      "warehouse": "novosibirsk",
+      "availability": 3.8
+    }
+  ]
+}
